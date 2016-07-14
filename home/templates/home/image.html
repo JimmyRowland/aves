@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>AVES</title>
+<link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+    background-image: url("{% static 'home/img/background.png' %}");
+}
+
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+.slide1{
+  background-image: url('{% static 'home/img/photo.png' %}');
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/03/2016-03-30_WestBow_ROW12007933071_1920x1080.jpg');
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-16_ShenandoahNP_ROW12113844963_1920x1080.jpg');
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.slide4{
+  background-image: url('{% static 'home/img/culture.png' %}');
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.carousel-header h4{
+margin-top:0;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+.carousel-caption h2{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:140px;
+    color:green
+
+}
+.carousel-caption h3{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:140px;
+    color:#fff;
+
+}
+.carousel-caption h4 {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+</style>
+</head>
+<body>
+
+{% block navbar %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>You Can Achieve Anything</h1>
+      <h4>We Will Help You Follow Your Dream</h4>
+      <p><a href="{% url 'home:contact' %}" class="btn btn-primary btn-sm">Learn More</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide1"></div>
+
+
+
+    <div class="carousel-caption">
+      <h3>We Care About Your Future</h3>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide3"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h3>
+          We Offer Different ESL Classes Just For You</h3>
+
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide4"></div>
+
+
+
+    <div class="carousel-caption">
+      <h1>We Have Various Culture Exchange Programs For You To Choose</h1>
+        <h4>USA? Canada...?</h4>
+        <p><a href="{% url 'home:contact' %}" class="btn btn-primary btn-sm">Contact Us Now</a></p>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>About</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+
+
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+<link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+<link rel="stylesheet" href="{% static 'home/css/font-awesome.css' %}" type = "text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{% static 'home/css/bootstrap-social.css' %}" type = "text/css"/>
+    <style type="text/css">
+
+        #aboutaves{
+            font-size: 20px;
+        }
+        #incol{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        #profile{
+            padding-bottom: 0;
+
+            padding-right: 10px;
+        }
+        .col-md-4{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .caption p{
+            font-size: 17px;
+                text-align: left !important;
+
+        }
+        .caption h3, p{
+            margin-top: 10px !important;
+
+
+        }
+.btn {
+    border-radius: 4px !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+body {
+    background-image: url("{% static 'home/img/background.png' %}");
+}
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+.slide2{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-04_Wilhelmshohe_ROW9040324021_1920x1080.jpg');
+  height: 63vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+@media (max-width: 991px) {
+          #aves, #profile{
+              width:0%;
+              height:0%;
+
+          }
+            #leftcol, #rightcol{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+    }
+@media (min-width: 991px) {
+          #longlogo, #smallprofile{
+              width:0%;
+              height:0%;
+
+          }
+        #leftcol{
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+        #rightcol{
+            padding-left: 10px;
+            padding-right: 0px;
+        }
+}
+
+</style>
+</head>
+<body>
+
+{% block content %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<h3>Google Translate &amp; Dictionary extensions</h3>
+
+Google Translate &amp; Dictionary is the best. You can just double click an unfamiliar word. Tow popups will show up. One is translated in your native language. The other is the English definition of the word. The best part is that google will only give the exact meaning you need, which makes sense in the text, rather than display a list of meanings for people to read through. People can also listen to high quality pronunciations of words.
+
+The downside of using Google Translate &amp; Dictionary is that people live in China have to use a proxy server or VPN to get access to google servers. You can find the complete tutorial down below.
+
+<h3>Lingoes</h3>
+
+Lingoes is a single-click multi-lingual translation software program like Youdao dictionary. The reason people should choose Lingoes over Youdao is that Lingoes is embedded with better dictionaries such as Oxford English Dictionary. You can download Lingoes <a href="https://mega.nz/#!Slg0CYxZ!S_A2rKikVb4Pw-Tcuf4MVWvala2wog5rpIZbeMze8co" target="_blank">here</a>. You can find instructions <a href="http://www.lingoes.cn" target="_blank">here</a>.
+
+<h3>How to use Google Translate &amp; Dictionary extensions</h3>
+
+1: First download and install <a href="https://mega.nz/#!GxAUVLRI!jzXhxL9fkllp6YQz1LPcudCMi3kW4om9ZmrIHqfPnxM" target="_blank">Chrome (for Windows 10/8.1/8/7 64-bit)</a>.
+
+2: Download and extract <a href="https://mega.nz/#!isoAUCjK!SJ16Obk7Ma1PMEaoR0humYOWmLXoWmpTjbvr01OEf9w" target="_blank">shadowsocks</a>.
+
+Open shadowsocks.
+
+<img class="alignnone size-full wp-image-287" src="https://collegexam.files.wordpress.com/2016/06/capture.png" alt="Capture" width="621" height="119" />
+
+Make sure to check system proxy and the default server
+
+<img class="alignnone size-full wp-image-288" src="https://collegexam.files.wordpress.com/2016/06/capture1.png" alt="Capture1" width="450" height="239" />
+
+3: Open chrome, install <a href="https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en-US" target="_blank">google translate</a>  and <a href="https://chrome.google.com/webstore/detail/google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja?hl=en-US" target="_blank">google dictionary </a>
+
+Change extension settings:
+
+Right click – options
+
+<img class="alignnone size-full wp-image-289" src="https://collegexam.files.wordpress.com/2016/06/capture2.png" alt="Capture2" width="211" height="211" />
+
+<img class="alignnone size-full wp-image-290" src="https://collegexam.files.wordpress.com/2016/06/capture3.png" alt="Capture3" width="655" height="574" />
+
+<img class="alignnone size-full wp-image-291" src="https://collegexam.files.wordpress.com/2016/06/capture4.png" alt="Capture4" width="174" height="174" />
+
+<img class="alignnone size-full wp-image-292" src="https://collegexam.files.wordpress.com/2016/06/capture5.png" alt="Capture5" width="727" height="420" />
+
+&nbsp;
+
+4: Look up words in a pdf file:
+<ul>
+	<li>Upload pdf file to your <a href="https://www.dropbox.com/install" target="_blank">Dropbox</a></li>
+	<li>Copy the link of the pdf file in your Dropbox<img class="alignnone size-full wp-image-293" src="https://collegexam.files.wordpress.com/2016/06/capture7.png" alt="Capture7" width="341" height="57" /></li>
+	<li>Paste link into your chrome<img class="alignnone size-full wp-image-294" src="https://collegexam.files.wordpress.com/2016/06/capture9.png" alt="Capture9" width="1062" height="751" /></li>
+</ul>
+
+5: Enjoy
+<h3>Download links:</h3>
+
+Chrome:
+
+<a href="https://mega.nz/#!GxAUVLRI!jzXhxL9fkllp6YQz1LPcudCMi3kW4om9ZmrIHqfPnxM" target="_blank">Mega drive</a>
+
+or
+
+<a href="https://www.google.com/chrome/browser/desktop/index.html?system=true&amp;standalone=1#" target="_blank">Official link</a>
+
+Shadowsocks:
+
+<a href="https://mega.nz/#!isoAUCjK!SJ16Obk7Ma1PMEaoR0humYOWmLXoWmpTjbvr01OEf9w">Mega drive</a>
+
+Lingoes:
+
+<a href="https://mega.nz/#!Slg0CYxZ!S_A2rKikVb4Pw-Tcuf4MVWvala2wog5rpIZbeMze8co" target="_blank">Mega drive</a>
+
+Dropbox:
+
+<a href="https://www.dropbox.com/install" target="_blank">Official link</a>
+
+Google Translate:
+
+<a href="https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en-US" target="_blank">Official link</a>
+
+Google Dictionary:
+
+<a href="https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=en-US" target="_blank">Official link</a>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+
+
+
+</body>
+</html>

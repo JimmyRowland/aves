@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+<link rel="stylesheet" href="{% static 'home/ableplayer-ableplayer-32da8a7/build/ableplayer.min.css' %}" type="text/css"/>
+
+</head>
+
+<body>
+<video id="video1" data-able-player preload="auto" width="480" height="360">
+  
+  <source type="video/mp4" src="http://videosws.praegnanz.de/assets/video.mp4"/>
+
+   <track kind="captions" src="http://videosws.praegnanz.de/assets/subtitles_en.vtt"/>
+  <track kind="descriptions" src="http://videosws.praegnanz.de/assets/subtitles_en.vtt"/>
+</video>
+<video data-youtube-id="rkY_zTKzPCY" id="video2" data-able-player preload="auto" width="480" height="360">
+
+
+</video>
+<video data-youtube-desc-id="S93jMOqF-oE" data-youtube-id="S93jMOqF-oE" id="video3" data-able-player preload="auto" width="480" height="360">
+<track kind="captions" src="philo.vtt"/>
+<track kind="descriptions" src="philo.vtt"/>
+</video>
+</body>
+<script src="{% static 'home/ableplayer-ableplayer-32da8a7/thirdparty/modernizr.custom.js' %}"></script>
+<script src="{% static 'home/js/jquery.min.js' %}"></script>
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/ableplayer-ableplayer-32da8a7/thirdparty/js.cookie.js' %}"></script>
+<script src="{% static 'home/ableplayer-ableplayer-32da8a7/build/ableplayer.min.js' %}"></script>
+<script>
+  var youTubeDataAPIKey = "AIzaSyA8YrxA8k-L2_pC4bRhwZ3u0lSfiwVoDT4";
+  var googleApiReady = false;
+  function initGoogleClientApi() {
+    googleApiReady = true;
+  }
+</script>
+<script src="http://apis.google.com/js/client.js?onload=initGoogleClientApi"></script>
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>FAQ</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+
+
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+<link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+<link rel="stylesheet" href="{% static 'home/css/font-awesome.css' %}" type = "text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+
+body {
+    background-image: url("{% static 'home/img/background.png' %}");
+}
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+.slide2{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-04_Wilhelmshohe_ROW9040324021_1920x1080.jpg');
+  height: 63vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+
+</style>
+    <script type="text/javascript">
+	<!--
+	$(document).ready(function() {
+		$(".expanded").hide();
+		$(".collapsed").show();
+		$(".moretext").show();
+		$(".lesstext").hide();
+		$(".expandall").show();
+		$(".collapseall").hide();
+
+		$(".expandall").click(function() {
+			$(".expanded").show();
+			$(".collapsed").hide();
+			$(".lesstext").show();
+			$(".moretext").hide();
+			$(".expandall").hide();
+			$(".collapseall").show();
+		});
+
+		$(".collapseall").click(function() {
+			$(".expanded").hide();
+			$(".collapsed").show();
+			$(".lesstext").hide();
+			$(".moretext").show();
+			$(".expandall").show();
+			$(".collapseall").hide();
+		});
+
+/*
+		// Toggle expand / collpase
+		$(".expandall, .collapseall").click(function() {
+			$(".expanded").toggle();
+			$(".collapsed").toggle();
+			$(".lesstext").toggle();
+			$(".moretext").toggle();
+			$(".expandall").toggle();
+			$(".collapseall").toggle();
+		});
+*/
+		$(".moretext, .lesstext").click(function() {
+			$(this).parent().children(".expanded, .collapsed").toggle();
+			$(this).parent().children(".lesstext, .moretext").toggle();
+		});
+	});
+	//-->
+	</script>
+
+</head>
+<body>
+
+{% block content %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>About</h1>
+
+    </div>
+  </div>
+  </div>
+</div>
+<br />
+<div class="container">
+
+
+
+        <!-- Intro Content -->
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" width="100%" height="100%" src="{% static 'zinnia/img/aveslogo.png' %}" alt="">
+            </div>
+            <div class="col-md-8">
+                <h2>About AVES</h2>
+                <p>We know that it is extremely hard to learn a foreign language and get opportunities to study abroad, especially for Chinese Students. We have a strong team dedicated to help Chinese students master English and find the best ways to pursue their academic  goals.</p>
+                
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Team Members -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row_block text-block">
+    <div class="container">
+        <h3>Frequently Asked Questions</h3>
+		<div style="float: left; margin: 0px 0px 10px 30px;">
+		<h4>
+		<a href="javascript:void(0)" class="expandall">Show All</a>
+		<a href="javascript:void(0)" class="collapseall">Hide All</a>
+		</h4>
+		</div>
+		<div class="clear-h5"></div>
+		<div class="grid_12">
+			<div class="list">
+				<ul>
+					<li>
+<div class="list_marker"><a id="q1"></a></div>
+<span class="text-bold">Q1: What is a Co-op?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">A Co-op is where people come together with a common cause or idea and share their resources towards achieving this end. In Co-ops, members work together and share in all the organizations responsibilities so that costs can be kept low. The resulting savings are used to benefit the members by increasing facilities and maintaining low costs. There are different types of Co-ops in the USA and around the world besides housing Co-ops, such as day-care, credit unions, food, dining co-ops...etc.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q2"></a></div>
+<span class="text-bold">Q2: What is the UCHA Co-op like?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The UCHA Co-op is a member-run organization that offers affordable Housing to UCLA and other full-time students. A pivotal factor and benefit of the UCHA is that it keeps facilities basic, so as to reduce on overall expenses, and thereby offer affordable (room and board) rates to students needing cheap housing. The organization consists of over 400 students from the United States and around the world. All members who live here participate in the functioning of the organization by contributing approximately 4 hours per week of their time in various departments of the organization. Some examples of these departments are: Food service, facilities (i.e. maintenance and clean-up), bathroom cleaning, social activities, office etc. All chore assignments are flexible, and are based around a students schedule. All students living at the UCHA Co-op are considered members and part-owners of the Association. Members are encouraged to volunteer their ideas as well as their time in improving the organization and to make it a fun living environment. The UCHA Co-op provides basic facilities to students such as food and utilities. In addition, all rooms are equipped with a bed, closet, curtain, desk and desk chair. We do not provide air-conditioning or fans. Members are required to bring all personal items (towels, soap etc.), or they may purchase them in shops nearby. The UCHA Co-op is located within walking distance of the UCLA campus in cosmopolitan Westwood.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q3"></a></div>
+<span class="text-bold">Q3: Do you offer tours?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Yes, we do offer tours on a regular basis. Please call 310 208 8242 for current tour times.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q4"></a></div>
+<span class="text-bold">Q4: How do I apply?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Just fill out an application and attach it with your student status information (i.e. valid School ID, Admission letter) and payment of the application fee (minimum payments i.e. US$35.00). The deposit fee and the membership fee is not required until the day of check-in by the member. The application fee may be paid by cash, money order or bank draft, which needs to be included with the application. You may also write the number of your credit card at the back of your application, along with the expiry date and the amount you want debited. Also be sure to indicate if you want your application processed "express". We do not accept wire transfers or payments by PayPal. You can send the application by:
+<ul style="list-style: circle; margin-left: 50px;">
+	<li>Fax: (310) 824-0112</li>
+	<li>E-mail: uchaweb@earthlink.net, or</li>
+	<li>Regular mail or in person to/at: 500 Landfair Avenue Los Angeles, CA 90024 USA</li>
+</ul></span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q5"></a></div>
+<span class="text-bold">Q5: How are students admitted to the UCHA (Co-op)?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded"><p>Admission is generally on a rolling basis; there are no application deadlines. But priority is given to UCLA students. Prospective residents are required to turn in the application with the $35 fee. <span class="text-bold">Regular</span> processing of an application will take approximately between 2 to 4 weeks (<span class="text-bold">Express</span> processing will take 5 business days). <span class="text-underline">Please Do Not send more than one application.</span> You only pay one application fee per application. All applications must be manually signed, not typed in, and sent in with proof of student status (i.e. copy of Id, admission letter, I-20 etc.).</p>
+<p>Applicants will be contacted only <span class="text-underline">after</span> the application has been processed (during the above-mentioned period) and given a result (i.e. admitted, denied, or waitlisted). The UCHA may not contact you prior to formal approval.</p>
+If approved, UCHA (the office of the Executive Director) will contact (write or E-mail) the applicant informing of his/her admission and requiring confirmation from the applicant by payment of the reservation fee. This fee, while non-refundable, will be credited towards the first room and board contribution (payment) of the quarter, and will need to be paid by the due date as specified by UCHA. On receipt of the reservation fee, UCHA will inform applicant of his/her reservation, and specify the official check-in date. On the date of check-in, the newly admitted member is required to make payment of the deposit, membership fee, and any early check-in charges (if any) as well. The member fee is a <span class="text-bold">one-time</span> fee, to join the Association. The security deposit is refundable, and kept for the entire duration of your stay at the UCHA. It will be forwarded to the member after official check-out on request.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q6"></a></div>
+<span class="text-bold">Q6: How late can I apply?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The UCHA has no application deadlines and admission is on a rolling basis (i.e. vacancies filled on a first-come, first-served basis), until all vacancies are filled. Priority is given to UCLA students, and returning members. All applicants are advised to apply early before the quarter you want admission for, especially if you are seeking Fall admission. However, the UCHA does accept applications even after the quarter has begun depending on vacancies. An application takes 2-4 weeks for processing (depending on the time of year). However, you could ask for an application to be processed "express" which will be done within five business days. The express fee is $20.00 and is in addition to the $35.00 application fee. Returning members must apply no later than 6 weeks prior to the check-in date of the quarter you want admission for.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q7"></a></div>
+<span class="text-bold">Q7: What payments do I need to make to complete the admissions process?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Prior to check-in, you should have made the following payments: Application fee (US$35.00-Non-Refundable), reservation (room and board) fee ($600.00 Non-refundable). The $1,200.00 deposit and the $200.00 (Non-Refundable) member-fee will need to be paid at the time of check-in along with any early check-in charges. For check-ins (within two weeks) prior to the official check-in date, there is a charge of US$25.00 a day until the official check-in date. For any check-ins beyond two weeks (prior to the official check-in date) payment will be on a *weekly pro-rated basis (*i.e. the price per week is the same whether a check-in is on a Monday or on a Friday).</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q8"></a></div>
+<span class="text-bold">Q8: Whom do I make payments out to? And how or where do I send it to?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">All non-cash payments should be addressed to "UCHA". Our mailing address is: 500 Landfair Avenue, Los Angeles, CA 90024. For payments by credit card, you would need to send a fax or email stating that you authorize the UCHA to debit your card, and specify the credit card information: the card number, expiration date, last three digits of the security code (found on the reverse of the card) and the amount you want debited. Sorry, but we <span class="text-bold">do not</span> accept personal checks.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q9"></a></div>
+<span class="text-bold">Q9: What guarantees me a spot?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">While the UCHA reserves the right to rescind/withdraw an offer of housing (and/or make changes to it's policies), but assuming no cancellation is in force, a place can only be considered guaranteed, once you have met the following criteria:
+<ul style="list-style: circle; margin-left: 50px;">
+	<li>you have been officially admitted</li>
+	<li>you have paid the reservation fee by the due date</li>
+	<li>you are in receipt of official confirmation from the UCHA (in writing) stating that we have reserved a place for you</li>
+</ul>
+Please note: Any verbal assurances are not to be accepted, and UCHA will not at any time consider such claims as valid either.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q10"></a></div>
+<span class="text-bold">Q10: How do I send my application fee or reservation fee payments?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The application fee must be sent in with the official application. If you are paying by credit card there is a section on the second page of the application form for you to write in card details. If paying by money order, simply enclose the payment. Do Not Send in Cash. For reservation payments, you could make your reservation payment by cash, credit card, travelers' check or money order/bank draft. If you wish to pay by credit card, you would need to send us a letter/email/fax stating that you authorize the UCHA to debit your card, and specify the full card#, amount, expiry date and security code (last three digits found at the back of the card). You can also mail in your payment, or pay in person. Please note, we take Visa or Mastercard only. We Do Not accept wire transfers. Also note, the $600 reservation fee is part of your first room and board payment and is aside of the security deposit. The security deposit (currently $1,200), will be required at check-in.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q11"></a></div>
+<span class="text-bold">Q11: Can I apply for space on arrival?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">No, and we strongly advice you against doing that. Spaces are competitive and you need to get official confirmation in writing prior to arriving.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q12"></a></div>
+<span class="text-bold">Q12: What is the membership fee?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">At UCHA, residents are members of the organization. This one-time, non-refundable fee, is used for various member related activities such as social events, to fund and maintain the computer lab, movie nights, the member year book, etc.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q13"></a></div>
+<span class="text-bold">Q13: Can I use financial aid towards payments?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The UCHA does not work with financial aid offices of any college. Students are responsible for contacting their respective aid offices and paying their bills to the UCHA by its due dates.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q14"></a></div>
+<span class="text-bold">Q14: How is the student billed that does not attend UCLA?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Non-UCLA students (i.e. SMC, UCLA Extension, CalState schools etc.), or students attending UCLA professional schools may check-in at any time during the week in accordance with their respective school schedule. However, as the UCHA co-op structures its quarterly schedule around the UCLA undergraduate school schedule, so is the billing period. As such, while non-UCLA students may come in mid-quarter, such students would be responsible for room and board (rents) in accordance with the regular co-op billing cycle. If the non-UCLA member's school schedule should end mid-quarter of the co-op billing period, such a member would still be responsible for room and board payments until the end of the UCHA co-op quarter.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q15"></a></div>
+<span class="text-bold">Q15: What if I want to leave mid-quarter?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">All contracts are for one quarter (approximately eleven weeks), or at least one session in the summer, and automatically renewable unless canceled. Residents are responsible for the entire quarters room and board payments regardless of the actual days spent at UCHA. In addition, there will also be a $100.00 breach of contract fee, for non-fulfillment of the contract and quarterly chore requirements, if you choose to leave early.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q16"></a></div>
+<span class="text-bold">Q16: When do I make my room and board payments?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">While members (residents) are responsible for the entire quarters room and board payments you are billed in 3 monthly installments (during a quarter),due on the first working day of each month. It is according to the following schedule: <span class="text-underline">1st installment/month:</span> US$600.00, <span class="text-underline">2nd installment/month:</span> US$600.00, <span class="text-underline">3rd installment/month:</span> the Balance payment (the balance due depends on the building and type of room one is in - for example: HHH double, Essene triple, Robison triple etc.). See RATES section for specific rates.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q17"></a></div>
+<span class="text-bold">Q17: When do I get my deposit?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Approximately three weeks after you move out. You will need to contact the Accounts department for specific information pertaining to your refund (<a href="mailto:coopaccounting@yahoo.com">coopaccounting@yahoo.com</a>).</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q18"></a></div>
+<span class="text-bold">Q18: When do I check-in?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded"><p>Usually, you would check-in on the official check-in day of each quarter. However, if you needed to check-in mid-quarter or at any other time earlier or later, that is possible, but you need to first confirm the dates with the office by <span class="text-underline">emailing</span> the official address. Members who want to increase their seniority may also check-in earlier to the official check-in day. Please note however, you may check-in only after receiving written confirmation of a space for you. All check-ins need to be during official hours: M-F 10:00AM - 6:00PM. We are closed on Saturdays, Sundays and holidays, so, please email (<a href="mailto:coopaccounting@yahoo.com">uchaweb@earthlink.net</a>) to confirm holiday schedule or check this website (SERVICES section for holiday schedule details).</p>
+If you check-in within two weeks of the official check-in date, then the early check-in charge is @$25/day. If you want to come in even prior to that, then you will be billed a pro-rated rate (see RATES section). All early check-in fees include food and utilities, and require that you perform your weekly chore option, and all other obligations, as per your contract/rules of the Association.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q19"></a></div>
+<span class="text-bold">Q19: What type of room will I get and when?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">UCHA is a student cooperative; hence, all room selections are made by each member according to their individual seniority. When you check-in however, you will be assigned a temporary room, until you pick your permanent room. These selections are usually made during the second or third week of each quarter (as per the UCLA calendar) during the official process called "BUMP". Bump is a special day when students gather to select the rooms of their choice See Q30 for details). These selections are made according to each member's seniority, where the most senior members are called upon first to make their selections followed by members of lesser seniority. Members may also improve their chances by group bumping which means teaming up with other senior members, or checking-in prior to the official check-in day. If you group bump, the seniority of your group is averaged. Seniority is defined as the number of days a member has actually lived at the UCHA co-op. Most new students usually live in a triple the first quarter of their residence at the co-op. For more information please call the front office.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q20"></a></div>
+<span class="text-bold">Q20: Can I get parking?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The UCHA does offer a limited amount of parking spots to members. Parking may be obtained only after you officially check-in, and not anytime before. All (parking) assignments are competitive and are issued based on a member's seniority in the organization. As such, new members should expect to obtain parking on campus or park on the streets around the first two quarter's of their residence at the UCHA, until such time as they are able to compete for and obtain a spot. You may however, apply for a temporary spot, and this (if obtained) will only be offerd until the scheduled Bump day.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q21"></a></div>
+<span class="text-bold">Q21: How far away is the UCLA campus from the Co-op?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The UCLA campus is approximately five to ten minutes walking distance from the Co-op.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q22"></a></div>
+<span class="text-bold">Q22: What is the difference between the three buildings?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">The Co-op has three buildings Hardman Hansen (HHH), Essene and Robison.
+<ul style="list-style: circle; margin-left: 50px;">
+	<li>HHH is a seven story building which is centrally located, housing the cafeteria, mail room, main office, computer room and student store.</li>
+	<li>What's distinct about Essene is that most of the rooms have their own bathroom.</li>
+	<li>Robison is a cultural landmark and is a collection of apartment-styled entry ways to the individual rooms.</li>
+</ul></span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q23"></a></div>
+<span class="text-bold">Q23: What kind of meal plan do you offer?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">During the quarter,we offer 19 meals per week (Monday through Friday: Breakfast Lunch Dinner, and Saturday/Sunday: Lunch and Dinner). Meals (19/week), are part of the quarterly room and board charge (i.e. rent) and are not separated according to individual circumstances. Should you not be available during these times you may ask a fellow member to save a plate for you. Meals served during the break or outside of posted hours (if any), are a curtsey, and are not part of the quarterly contract. Such services depend on staff and member availability, and are at the discretion of the UCHA. We <span class="text-underline">do not</span> permit members to prepare/cook their own meals instead of participating in our meal plan.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q24"></a></div>
+<span class="text-bold">Q24: What type of foods do you serve?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">As UCHA is culturally diverse , we try to cater to wide variety of tastes. Some of the more popular dishes served are: spaghetti and meat balls, pasta, hamburgers, hot dogs, ribs, soups and salads, pizza, lasagna, steamed rice, boiled vegetables, curry, egg rolls, etc. UCHA also serves a variety of cuisines from Asia and other parts of the world. All entrees are prepared by a full-time professional staff. However, we also accept the contribution of individual members to the overall menu.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q25"></a></div>
+<span class="text-bold">Q25: Are the rooms furnished?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">All rooms are furnished with only a writing desk, chair, bed, mattress, closet, curtains and a bookshelf. Any other items, including all personal items such as bed sheets, blankets, pillowcases, towels, toiletries, etc., need to be brought in by you. Microwaves, toasters and other electrical appliances are not allowed. However, you may bring in a mini-fridge. The caferteria does provide a microwave and toaster for members to use.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q26"></a></div>
+<span class="text-bold">Q26: What kind of a chore shift would I have to do?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded"><p>All first quarter members are required to help-out (do their chore requirement) in one of three areas: Kitchen, Facilities and Security. A member may transfer to a different crew (i.e. Office, Co-op store, social etc.) the second quarter and after.</p>
+<p>Explanation of Shifts:</p>
+<p><span class="text-bold">Kitchen:</span> The kitchen is open for service from 6:00am each morning (starts at 8:00am on the weekends) till 10:00pm each night (ends at 9:00pm on the weekends). Members will select a specific day and time (at check-in), to work in any four-hour time slot (i.e. shift) each week. The time slots available are based on the needs of the department. You may continue to do your chore at the same time each week unless you need to change your time or crew. Working in the kitchen usually entails helping in serving food, washing dishes, pots/pans, preparing salad items and a variety of clean-up projects(i.e. mopping,sweeping etc). All students work under the direction of a supervisor popularly known as the KC (Kitchen Chief).</p>
+<p><span class="text-bold">Facilities:</span> Here too each member works under the direct supervision of the manager or supervisor for the day. Projects include fixing and assembling furniture, painting, and assisting the full-time staff with a variety of miscellaneous duties. Duties also include: Sweeping/Mopping the public areas of all three buildings,emptying trash,vacuuming etc.</p>
+<span class="text-bold">Security:</span> All shifts are in the evening/early morning (i.e. 11:00pm to 6:00am) and crew members work largely unsupervised. Duties include patrolling the buildings and monitoring the presence of non-members. Additionally, crew members may be requested to work extra hours at special events.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q27"></a></div>
+<span class="text-bold">Q27: Is it possible to rent a single or double or be with my friend?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">No. We do not give out specific rooms. As rooms are given out on a seniority basis, all singles, and most of the doubles are taken by the members who have been here a longer time. It takes approximately two years to have a reasonable chance of competing for a single, and approximately two quarters to have a reasonable chance of getting a double. Usually a new member moves into a triple until they have enough seniority to Bump to the room of their choice. As such, if you want to live with a friend in a double or in any other room, you will need to check-out your chances during the formal process (i.e. at Bump). The admissions office does not involve itself in securing a specific room for a resident. It is all confirmed through the official Bump process and is upto the individual resident to secure the room or roommate of their choice at "BUMP." (see Q30: for more details).</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q28"></a></div>
+<span class="text-bold">Q28: What size beds do you provide?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Beds are usually twin size. The approximate mattress size is: 38"x77". Please note we also provide bunk beds that are similar in size.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q29"></a></div>
+<span class="text-bold">Q29: What is a Triple, Double etc. and what size are the rooms in UCHA?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">A Triple is one room shared by 3 roomates, a Double is one room shared by 2 roommates etc. Room size varies depending upon the building you live in. However, the average sizes are:
+<ul style="list-style: circle; margin-left: 50px;">
+	<li>Triple - 11' x 20'.4"</li>
+	<li>Double - 10'.8" x 18'.2"</li>
+	<li>Single - 7'.6" x 6'.10"</li>
+</ul></span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q30"></a></div>
+<span class="text-bold">Q30: What is "BUMP"?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Bump is the day a new resident obtains his/her permanent room. On an assigned date (Usually the second or third week in a new quarter), all new members (and those old members who would like to try a different room), assemble in the cafeteria, where they are called upon one-by-one, and according to their seniority (i.e. days they have been living at UCHA), to select their new room. At this event (i.e BUMP) there will be a display of all rooms that are open for selection. Members may improve their seniority by teaming up with more senior members (e.g. If you team-up with a member who has been living here for one year, then, you will both have an average of six months seniority each). It is not possible to assess one's chances for getting a room of your choice, as it depends on a variety of factors such as the number of residents participating, the amount of senior Co-opers competing, and the resulting vacant rooms open for selection. But on average it takes approximately two years to get a single. Obtaining a double is a bit easier (approximately two quarters), but again, it depends on the competition (at each Bump). This event is held every quarter (except summer), and you don't have to Bump a second time unless you want to change a room, be with a friend in a different room, or you are required to for not meeting the membership standards in a quarter. Depending on space/room availability, and with the consent of both parties, you may apply to live with a member of the opposite gender (possibilities will vary each quarter). This event is solely organized by the membership committee, and they entertain questions and inform students of details regarding the process during the week of this event.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q31"></a></div>
+<span class="text-bold">Q31: What other requirements are there?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">In addition to your weekly chore requirement, members will also have to maintain their restroom facilities. While some rooms have private bathrooms, most of the rooms share a common bathroom in a hallway. Cleaning times vary and depend on how many members in a hallway share the same bathroom. Usually, it's 2-3 times a quarter, but the requirement is determined by the bathroom crew chief.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q32"></a></div>
+<span class="text-bold">Q32: Do you offer airport pick-ups?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">No, unfortunately, we do not. However, there are many options available to passengers at the airport. Please inquire at the airport information booth.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q33"></a></div>
+<span class="text-bold">Q33: How do I get to the Co-op from LAX airport?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">As the Co-op does not provide transportation most people usually hire a cab (approximately $45.00 and around 25 minutes), or take the shuttle van (around 1 hour, depending on traffic) from the airport. Look for the blue "Van Stop" sign outside the baggage claim area and tell the airport employee that you need a shuttle to UCLA or Westwood. There are many van companies with cost ranging from $15 to $35.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q34"></a></div>
+<span class="text-bold">Q34: Could I change my arrival date or quarter of admission?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Yes, once approved, you can change your arrival date, so long as you inform the office in writing (by email) prior to the change and come during our check-in office hours. Check-in hours are Monday through Friday 10:00am to 6:00pm. Also, please be informed, there will be an additional charge for early arrival. The price will vary depending on the arrival date.<br />
+If you want to transfer your admission for a different quarter, that may be possible as well. In this case you would need to email the admissions office and formally request that your admission be forwarded to the next quarter of your choice. The confirmation of your request will depend on space availabilities for that quarter. No space can be considered reserved until you are in receipt of official confirmation from the office of the Executive Director <span class="text-underline">in writing</span>.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q35"></a></div>
+<span class="text-bold">Q35: What if I cannot make it during the check-in hours?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">If you are unable to make it during the official check-in times, you would need to check in to a nearby hotel/motel and come in on the next day open for business. We do not have other persons check-in on your behalf. We only check-in the person who has an official reservation. For details on nearby living options, please visit the online UCLA Housing Office Hotel/Motel directory.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q36"></a></div>
+<span class="text-bold">Q36: Where are you located?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">We are on the corner of Landfair at Ophir in Westwood, one block from the University of California, Los Angeles.<br />
+Remember, the Co-op address is 500 Landfair Avenue, Los Angeles, CA 90024. This is the address you would be arriving at to officially check in.<br />
+<div class="grid_6"><a href="https://www.google.com/maps/place/500+Landfair+Ave,+Los+Angeles,+CA+90024/@34.067952,-118.4529546,16z/data=!4m2!3m1!1s0x80c2bc8fe7998a91:0xe8f74ac169a9d4b6" target="_blank"><img src="images/google-map-500-Landfair.jpg" style="width: 100%; height: auto;" /></a></div><div class="clear-h10"></div></span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q37"></a></div>
+<span class="text-bold">Q37: How far away are you from Santa Monica College?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">We are about 45 minutes away by bus (depending on traffic) and about 20 minutes away by car (depending on trafic).</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q38"></a></div>
+<span class="text-bold">Q38: Are there separate floors or wings for men and women?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">While the rooms are same sex our halls are gender-mixed. The bathrooms however are used by members individually. Should you want to live with a member of the opposite sex you would need to apply to do so at BUMP. However, no assurances are offered and it depends on space availability.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q39"></a></div>
+<span class="text-bold">Q39: Are personal appliances (like a radio or TV) allowed in the room?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Yes. Personal appliances are allowed in the room provided that they are not cooking devices (ovens, microwaves, hot plates etc. are not allowed). You may have a small fridge. Microwaves are available in the cafeteria, which are open to members 24 hours/day.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q40"></a></div>
+<span class="text-bold">Q40: Is there a place where I can keep my valuables?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">At UCHA, while we provide a closet and writing desk, we do not provide safes, lockers, etc. Students that require such facilities would need to bring their own or seek professional services that may be available in the neighborhood.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q41"></a></div>
+<span class="text-bold">Q41: Is there an area where residents can keep food or fix their own snacks or meals?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">No. Unfortunately we do not allow members to prepare their own food.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q42"></a></div>
+<span class="text-bold">Q42: How are your bath and shower facilities?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">While some rooms have attached baths, most rooms share bathrooms in the same hallway. On average four rooms will share two bathrooms. However, while residents of a hallway share the common bathrooms, each bathroom is occupied one member at a time.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q43"></a></div>
+<span class="text-bold">Q43: Can I send my packages to UCHA before arrival?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">UCHA does not take any responsibility for handling packages of prospective residents. As such, you will need to make sure that you are here and officially checked-in prior to the arrival of your package. Our mailing address is 500 Landfair Avenue, Los Angeles, CA 90024.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q44"></a></div>
+<span class="text-bold">Q44: What are check-in times?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Check-in times are Monday through Friday from 10am till 6pm. The office is closed on the weekends (Saturday and Sunday), and on special holidays. As such, no check-ins are possible on these days. Please see SERVICES section for specifics on special holidays.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q45"></a></div>
+<span class="text-bold">Q45: Is there any internet service in the rooms / on UCHA premises?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Yes, there is an internet service in each room.
+In addition, the UCHA has a fully operational computer room that provides internet / print services to members. Residents are able to utilize these facilities upon registering for it.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q46"></a></div>
+<span class="text-bold">Q46: Are pets allowed?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded">Sorry, no pets are allowed on UCHA premises.</span>
+<span class="collapsed"></span>
+					</li>
+					<li>
+<div class="list_marker"><a id="q47"></a></div>
+<span class="text-bold">Q47: What is the policy on the break periods and do I have to re-apply each quarter?</span>
+<a href="javascript:void(0)" class="moretext">Show</a>
+<a href="javascript:void(0)" class="lesstext">Hide</a>
+<br />
+<span class="expanded"><p>Members continuing to the next quarter are allowed to stay on the premises during break periods. Members checking-out/not staying for the next quarter, will be assesed a per-diem charge (daily charge) for stays after the official check-out day. However, any per-diem stay is only till the day prior to the start of the new quarter. Any stay into the new quarter would assume responsibilities for the new quarter, and would make the member responsible for the room and board charges for the entire new quarter. All stays during the break periods include members having to perform their chore obligations. Food is also served during this period as a curtesey and assuming staff availability.</p>
+Members do not need to re-apply each quarter. Contracts are automatically renewed each quarter (assuming you remain a member in good standing) unless you give notice of intent to move-out. This notice may only be given 30 days prior to the end of a quarter (see SERVICES section of website for check-out dates). For a member checking out, he/she would need to re-apply to check back in to the UCHA at a future quarter.</span>
+<span class="collapsed"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="https://placehold.it/750x450" alt="">
+                    <div class="caption">
+                        <h3>John Smith<br>
+                            <small>Job Title</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
+                        <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Our Customers -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Customers</h2>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive customer-img" src="https://placehold.it/500x300" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+
+    </div>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+	<script src="{% static 'home/js/ucha/jquery-migrate-1.2.1.js' %}"></script>
+	<script src="{% static 'home/js/ucha/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static 'home/js/ucha/jquery.ui.totop.js' %}"></script>
+	<script src="{% static 'home/js/ucha/script.js' %}"></script>
+	<script src="{% static 'home/js/ucha/superfish.js' %}"></script>
+	<script src="{% static 'home/js/ucha/jquery.mobilemenu.js' %}"></script>
+
+
+
+</body>
+</html>

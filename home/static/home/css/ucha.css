@@ -1,0 +1,940 @@
+
+/*========================================================
+                    1. Import
+=========================================================*/
+
+
+
+@import url(//fonts.googleapis.com/css?family=Fjalla+One);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+/*========================================================
+                    2. Global
+=========================================================*/
+
+a[href^="tel:"]{
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  -webkit-text-size-adjust: none;
+}
+:focus{
+	outline: medium none;
+}
+
+body{
+	background-color: #fff;
+/*	color: #928e92;*/
+	color: #494749;
+	font: 13px/20px 'Open Sans';
+}
+.p-title{
+	font-size: 21px;
+	line-height: 21px;
+	color: #3b3838;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+h1{
+	display: inline-block;
+}
+h2{
+	color: #fff;
+	font: 65px/77px 'Fjalla One';
+	text-transform: uppercase;
+}
+h3{
+	font: 36px/45px 'Fjalla One';
+	color: #5f5f5f;
+	text-transform: uppercase;
+	margin-top: 102px;
+}
+.h3__style{
+	font-size: 42px;
+}
+h4{
+	font-size: 21px;
+	line-height: 21px;
+	margin-bottom: 7px;
+	color: #3b3838;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.last{
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+
+/*========================================================
+                    3. Main layout styles
+=========================================================*/
+
+/* Header
+========================================================*/
+
+header{
+	position: relative;
+	padding-top: 34px;
+	padding-bottom: 36px;
+	border-top: 8px solid #037b6b;
+}
+header img{
+	width: inherit;
+	height: inherit;
+}
+
+/* Content
+========================================================*/
+
+.row_block{
+	border-top: 1px solid #ebebeb;
+}
+
+/* Buttons
+=============================================*/
+
+.btn{
+	font-family: 'Fjalla One';
+	color: #5f5f5f;
+	display: block;
+	width: 70px;
+	margin: 45px 0 0 -9px;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+}
+.btn:hover{
+	text-decoration: none;
+}
+.btn:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	border-bottom: 1px solid #5f5f5f;
+	-webkit-transition: width 0.2s linear 0s;
+     -moz-transition: width 0.2s linear 0s;
+     -o-transition: width 0.2s linear 0s;
+     transition: width 0.2s linear 0s;
+}
+.btn:hover:after{
+	width: 100%;
+	-webkit-transition: width 0.2s linear 0s;
+     -moz-transition: width 0.2s linear 0s;
+     -o-transition: width 0.2s linear 0s;
+     transition: width 0.2s linear 0s;
+}
+
+/* Showcase
+=============================================*/
+.showcase{
+	position: relative;
+	color: #fff;
+}
+.showcase_text{
+	position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;
+}
+.showcase h2, .showcase p, .showcase a{
+	text-align: center;
+}
+.showcase .showcase_title{
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 8px;
+}
+.showcase p{
+	margin-top: 35px;
+}
+.showcase_btn{
+	font: 20px/20px 'Fjalla One';
+	text-transform: uppercase;
+	background: rgba(255,255,255,0.25);
+	border: 2px solid #fff;
+	border-radius: 4px;
+	display: block;
+	width: 148px;
+	margin: 50px auto 0;
+	padding: 13px 0;
+	-webkit-transition: all 0.2s linear 0s;
+     -moz-transition: all 0.2s linear 0s;
+     -o-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
+}
+.showcase_btn:hover{
+	background: rgba(255,255,255,0.5);
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear 0s;
+     -moz-transition: all 0.2s linear 0s;
+     -o-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
+}
+.showcase__style .showcase_text{
+	top: 20%;
+}
+.showcase__style .showcase_title{
+	margin-top: 20px;
+}
+
+/* Info Columns
+=============================================*/
+
+.inf-col li{
+	padding: 0px 20px 104px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.inf-col h3, .inf-col p, .inf-col a{
+	text-align: center;
+}
+.inf-col p{
+	margin-top: 25px;
+	padding-bottom: 50px;
+	position: relative;
+}
+.inf-col p:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+	width: 130px;
+	height: 1px;
+	border-top: 1px solid #d0d0d0;
+}
+.inf-col .btn{
+	margin: 34px auto 0;
+}
+
+/* List of Links
+=============================================*/
+.block-sep{
+	padding: 67px 0 80px;
+}
+.block-sep h3{
+	margin-top: 0;
+	padding-top: 35px;
+	margin-bottom: 30px;
+}
+.ver-sep .box_inner{
+	height: 100%;
+	margin-left: 50%;
+	border-left: 1px solid #ebebeb;
+}
+
+.list-links_text{
+	padding-top: 8px;
+	border-bottom: 2px dotted #ebebeb;
+}
+.list-links_text p{
+	padding-bottom: 30px;
+}
+.list-links_text+.list-links_text{
+	margin-top: 20px;
+}
+.list-links_text.last{
+	border: none;
+}
+
+/* Horizontal info
+=============================================*/
+
+.info-hor h3{
+	margin-bottom: 32px;
+}
+.info-hor_block{
+	display: inline-block;
+	margin-bottom: 36px;
+}
+.info-hor_block p{
+	overflow: hidden;
+}
+.info-hor_block img{
+	float: left;
+	max-width: 87px;
+	margin-right: 12px;
+}
+.info-hor_block div{
+	width: 88px;
+	height: 88px;
+	border-radius: 44px;
+	background-color: #037b6b;
+	float: left;
+	margin-right: 12px;
+	position: relative;
+}
+.info-hor_block div i{
+	color: #fff;
+	font-size: 40px;
+	top: 25px;
+	left: 23px;
+	position: absolute;
+}
+.info-hor_block div .fa-mortar-board{
+	left: 20px;
+}
+.info-hor_block div .fa-paper-plane-o{
+	left: 21px;
+}
+.info-hor_block div .fa-table, .info-hor_block div .fa-book{
+	left: 26px;
+}
+.info-hor_block p{
+	padding-top: 14px;
+}
+.info-hor .btn{
+	margin: 9px 0 0 -9px;
+}
+
+/* Dated
+=============================================*/
+
+.dated{
+	padding-bottom: 109px;
+}
+.dated time{
+	color: #037b6b;
+	font: 56px/56px 'Fjalla One';
+	padding-right: 33px;
+	border-bottom: 1px solid #e2e1e2;
+	display: inline-block;
+	margin-top: 44px;
+	padding-bottom: 10px;
+}
+.dated time span{
+	font: 18px/27px 'Fjalla One';
+	vertical-align: bottom;
+	text-transform: uppercase;
+}
+.dated time span a{
+	vertical-align: bottom;
+}
+.dated p{
+	margin-top: 26px;
+}
+.dated .btn{
+	margin: 41px 0 0 -9px;
+}
+
+/* Map on Main
+=============================================*/
+
+.map-main{
+	width: 100%;
+}
+.map-main iframe{
+	width: 100%;
+	height: 420px;
+}
+
+/* Text Block
+=============================================*/
+.text-block{
+	padding-bottom: 50px;
+}
+.text-block h3{
+	margin-bottom: 30px;
+}
+.text-block img{
+	width: 370px;
+}
+.text-block_img-left{
+	float: left;
+	margin-right: 25px;
+}
+.text-block_img-right{
+	float: right;
+	margin-left: 25px;
+	margin-top: -15px;
+}
+.text-block .text-block_style-1 p{
+	margin-bottom: 28px;
+}
+.text-block_style-2 h3{
+	margin-bottom: 26px;
+}
+
+.text-block p{
+	margin-bottom: 20px;
+}
+.text-block a{
+	color: #037b6b;
+}
+.contacts a:hover{
+	color: #928e92;
+	text-decoration: none;
+}
+
+/* Info Block
+=============================================*/
+
+.info{
+	padding-bottom: 109px;
+}
+.info h3{
+	margin-bottom: 32px;
+}
+.info li{
+	background: #f7f7f7;
+	margin-bottom: 30px;
+}
+.info .info_img{
+	position: relative;
+}
+.info .info_img__indent{
+	padding: 20px 20px 0;
+	position: relative;
+}
+.info .info_img__indent .lbHover{
+	top: 41%;
+	left: 43%;
+}
+.info .info_text{
+	background: #f7f7f7;
+	padding: 27px 16px 30px;
+}
+.info .box{
+	background: #f7f7f7;
+}
+
+.thumbs_img{
+	position: relative;
+}
+.lbHover{
+	color: #000;
+	font-size: 50px;
+	opacity: 0;
+	position: absolute;
+	top: 47%;
+	left: 44%;
+	 -webkit-transition: all 0.2s linear 0s;
+     -moz-transition: all 0.2s linear 0s;
+     -o-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
+}
+.info li .thumbs_img:hover .lbHover{
+	opacity: 0.8;
+	 -webkit-transition: all 0.2s linear 0s;
+     -moz-transition: all 0.2s linear 0s;
+     -o-transition: all 0.2s linear 0s;
+     transition: all 0.2s linear 0s;
+}
+
+.info-social{
+	margin-top: 25px;
+	display: inline-block;
+}
+.info-social div{
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	background: #dfdfdf;
+	color: #fff;
+	float: left;
+	margin-right: 9px;
+	position: relative;
+	 -webkit-transition: all 0.5s linear 0s;
+     -moz-transition: all 0.5s linear 0s;
+     -o-transition: all 0.5s linear 0s;
+     transition: all 0.5s linear 0s;
+}
+.info-social i{
+	position: absolute;
+	top: 8px;
+	left: 9px;
+}
+.info-social .fb-icon i{
+	left: 10px;
+}
+
+.info-social a {
+	text-decoration: none !important;
+}
+
+.info-social .tw-icon:hover{
+	background: #5dd7fc;
+	 -webkit-transition: all 0.1s linear 0s;
+     -moz-transition: all 0.1s linear 0s;
+     -o-transition: all 0.1s linear 0s;
+     transition: all 0.1s linear 0s;
+}
+.info-social .fb-icon:hover{
+	background: #3c599b;
+	 -webkit-transition: all 0.1s linear 0s;
+     -moz-transition: all 0.1s linear 0s;
+     -o-transition: all 0.1s linear 0s;
+     transition: all 0.1s linear 0s;
+}
+.info-social .gp-icon:hover{
+	background: #dd4b39;
+	 -webkit-transition: all 0.1s linear 0s;
+     -moz-transition: all 0.1s linear 0s;
+     -o-transition: all 0.1s linear 0s;
+     transition: all 0.1s linear 0s;
+}
+.info-social .li-icon:hover{
+	background: #0274b3;
+	 -webkit-transition: all 0.1s linear 0s;
+     -moz-transition: all 0.1s linear 0s;
+     -o-transition: all 0.1s linear 0s;
+     transition: all 0.1s linear 0s;
+}
+
+/* Quotes
+=============================================*/
+
+.quotes{
+	padding-bottom: 109px;
+}
+.quotes h3{
+	margin-bottom: 32px;
+}
+.quotes_img{
+	width: 16px;
+	height: 13px;
+	float: left;
+	margin-right: 13px;
+	margin-top: 5px;
+}
+.quotes h4{
+	margin-top: 13px;
+}
+
+/* Blog
+=============================================*/
+.blog{
+	margin-bottom: 175px;
+}
+.blog h3{
+	margin-bottom: 32px;
+}
+.post{
+	margin-bottom: 36px;
+}
+.post time{
+	display: block;
+	margin-top: 0;
+	position: relative;
+}
+.post div{
+	overflow: hidden;
+}
+.post .post_author{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+.post .post_author a{
+	color: #5f5f5f;
+}
+.post h4{
+	padding-top: 30px;
+}
+.post .dated{
+	padding-bottom: 0;
+}
+.post .dated p{
+	margin: 0;
+}
+.post .dated .btn{
+	position: absolute;
+}
+
+/* A-Side
+=============================================*/
+
+.a-side h3{
+	margin-bottom: 32px;
+}
+
+/* List
+=============================================*/
+
+.list .list_marker{
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #037b6b;
+	margin-top: 4px;
+	margin-right: 12px;
+	float: left;
+}
+.list li:hover .list_marker{
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #037b6b;
+	border-radius: 0;
+	background: transparent;
+	margin-top: -1px;
+}
+.list li{
+	margin-bottom: 10px;
+}
+.list li a{
+	line-height: 13px;
+}
+
+/* Map
+=============================================*/
+.map {
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+.map iframe {
+	border: none;
+	width: 100%;
+	height: 390px;
+}
+
+/* Contact
+=============================================*/
+.contacts{
+	margin-top: 42px;
+}
+.contact_adrress{
+	padding-top: 21px;
+	line-height: 30px;
+}
+.contacts span{
+	display: inline-block;
+	min-width: 100px;
+}
+.contacts a{
+	color: #037b6b;
+}
+.contacts a:hover{
+	color: inherit;
+}
+.feedback h3{
+	margin-bottom: 25px;
+}
+
+
+
+
+/* To Top Button*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    left: 51%;
+    margin-left: 600px;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    z-index: 20;
+    background-color: #037b6b;
+    border-radius: 10px;
+
+}
+#toTop i{
+    color: #fff;
+    font-size: 34px;
+    padding-top: 6px;
+    padding-left: 12px;
+}
+#toTop:hover i{
+    padding-top: 0px;
+    margin-top: 6px;
+    -webkit-transition: padding-top 0.2s linear 0s, margin-top 0.2s linear 0.2s;
+    -moz-transition: padding-top 0.2s linear 0s, margin-top 0.2s linear 0.2s;
+    -ms-transition: padding-top 0.2s linear 0s, margin-top 0.2s linear 0.2s;
+    -o-transition: padding-top 0.2s linear 0s, margin-top 0.2s linear 0.2s;
+    transition: padding-top 0.2s linear 0s, margin-top 0.2s linear 0.2s;
+}
+
+/* Footer
+========================================================*/
+
+footer{
+	padding: 57px 0 85px 0;
+	border-top: 1px solid #ebebeb;
+}
+.pr_policy{
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+}
+.pr_policy a{
+	text-transform: none;
+}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1200px){
+	.post .dated .btn{
+		position: relative;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 1400px){
+	.showcase .showcase_text, .showcase_indent .showcase_text{
+		top: 15%;
+	}
+	.showcase .showcase_text h2{
+		font-size: 50px;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.showcase .showcase_btn{
+		margin-top: 5px;
+	}
+	.showcase p{
+		margin-top: 5px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+  	.inf-col p:after{
+		left: 25px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.showcase .showcase_text h2{
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.showcase p{
+		display: none;
+	}
+	.showcase .showcase_title{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 979px) {
+	.inf-col p:after{
+		left: 30px;
+		width: 72px;
+	}
+	h3{
+		font-size: 25px;
+	}
+	.text-block img{
+		width: 270px;
+	}
+	.info .info-social div{
+		margin-bottom: 9px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	h3{
+		margin-top: 25px;
+		font-size: 36px;
+	}
+	.inf-col p:after{
+		left: 90px;
+		width: 200px;
+	}
+	.showcase .showcase_text h2{
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.showcase .showcase_title{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.showcase_btn{
+		font: 12px/12px 'Fjalla One';
+		width: 98px;
+		margin: 50px auto 0;
+		padding: 7px 0 5px;
+	}
+	.inf-col li{
+		padding-bottom: 25px;
+	}
+	.text-block img{
+		float: none;
+		margin:20px 0 20px;
+	}
+	.info li{
+		margin-bottom: 20px;
+	}
+	.quotes blockquote{
+		margin-bottom: 30px;
+	}
+	.list h3{
+		margin-top: 35px;
+	}
+	.map{
+		margin-bottom: 30px;
+	}
+	.post time{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.inf-col p:after{
+		left: 50px;
+		width: 130px;
+	}
+	.showcase_text{
+		display: none;
+	}
+	.inf-col p{
+		padding-bottom: 0;
+	}
+	.inf-col p:after{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.inf-col p:after{
+		display: none;
+	}
+}
+/*Core variables and mixins*/
+
+
+/* Added later */
+.clear-h5 { clear: both; width: 100%; height: 5px; }
+.clear-h10 { clear: both; width: 100%; height: 10px; }
+.clear-h25 { clear: both; width: 100%; height: 25px; }
+.clear-h50 { clear: both; width: 100%; height: 50px; }
+
+.fl-left { float: left; }
+.fl-right { float: right; }
+
+.margin-around { margin: 10px 10px 10px 10px; }
+.padding around { padding: 10px 10px 10px 10px; }
+
+.topic-line { color: #5F5F5F; font-weight: bold; font-size: 1em; }
+.text-bold { color: #5F5F5F; font-weight: bold; font-size: 1em;}
+.text-underline { text-decoration: underline;}
+
+.images-2 { border: solid 1px #000; }
+
+.center-item { margin-left: auto; margin-right: auto; }
+
+.moretext, .lesstext { margin-left: 10px; }
+
+table.mealschedule td, table.mealschedule th, table.mealschedule caption {
+	padding: 0 1em 0 1em;
+}
+table caption {
+	font-weight: bold;
+	color: #5F5F5F;
+}
+table.mealschedule th {
+	color: #008080;
+}
+table.mealschedule td {
+}
+
+/*** Style for tables ***/
+.table-general {
+/*	border: 1px solid #7a7;*/
+}
+.table-general > caption { }
+
+.table-general th, .table-general td {
+  text-align: right;
+  padding-right: .5em;
+  border: 1px solid #d0d0d0;
+}
+
+.table-general th {
+  font-weight: bold;
+  padding-left: .5em;
+}
+
+/* header */
+.table-general > thead > tr:first-child > th {
+  text-align: center;
+  color: #5F5F5F;
+}
+
+.table-general > thead > tr + tr > th {
+  font-style: italic;
+  color: gray;
+}
+
+/* fix size of superscript */
+.table-general sup {
+  font-size: 75%;
+}
+
+/* body */
+.table-general td {
+  background-color: #cef;
+  padding:.5em .3em .5em 2.3em;
+}
+
+.table-general tbody th:after {
+/*  content: ":";*/
+}
+
+/* footer */
+.table-general tfoot {
+  font-weight: normal;
+}
+
+.table-general tfoot th {
+  color: blue;
+}
+
+.table-general tfoot th:after {
+  content: ":";
+}
+
+.table-general > tfoot td {
+  background-color: #cee;
+}
+
+.table-general > tfoot > tr:first-child td {
+/*  border-top: .2em solid #7a7;*/
+}
+
+.table-general tfoot tr:last-child {
+  font-size: .9em;
+  font-style: italic;
+/*  border-top: .2em solid #4ca;*/
+}
+
+.table-general tfoot tr:last-child td {
+  background-color: #fff;
+  text-align: left;
+  border: none;
+}
+
+
+
+
+.f_italic {
+	font-style: italic;
+}
+.f_bold {
+	font-weight: bold;
+}
+.t_underline {
+	text-decoration: underline;
+}

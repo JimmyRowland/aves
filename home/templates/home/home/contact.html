@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Home</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+  .map {
+          position:relative;
+          /* float:left; */
+          width:540px;
+          height:540px;
+          border: grey 1px solid;
+        }
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+.slide1{
+  background-image: url('{% static 'home/img/photo.png' %}');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('http://www.iorise.com/blog/wp-content/uploads/2016/03/2016-03-30_WestBow_ROW12007933071_1920x1080.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('{% static 'home/img/IMG_20160104_133147.jpg' %}');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-header h4{
+margin-top:0px;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+.carousel-caption h2{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:140px;
+    color:green
+
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+</style>
+
+    <script type = "text/javascript">
+        function getMap() {
+          var maps = document.getElementsByClassName("map");
+          for(var t=0; t < maps.length; t++) {
+            bingMap.displayMap(maps[t]);
+          }
+        }
+      </script>
+</head>
+<body onload="getMap();">
+
+<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home/home.html">AVES</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="home/home.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Class Schedules <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>You Can Achieve Anything</h1>
+      <p>We Will Help You Follow Your Dream</p>
+      <p><a href="#" class="btn btn-primary btn-sm">Learn More</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+<div>
+
+
+      <div id='map1'
+           class='map'
+               data-mapdata='center: 40.809886, 111.711832; zoom:11; infobox: {title: Shihua Mansion 40.809915, 111.711863; location: 40.809886, 111.711832; address: "5904 School Ave. Richmond, VA 23228"};'></div>
+       </div>
+      <hr />
+
+
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+<script src="{% static 'home/js/map.js' %}"></script>
+<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
+
+
+
+
+</body>
+</html>

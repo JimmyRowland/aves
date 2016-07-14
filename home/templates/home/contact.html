@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Contact</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+<link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+<link rel="stylesheet" href="{% static 'home/css/font-awesome.css' %}" type = "text/css"/>
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap-social.css' %}" type = "text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    
+p {
+  line-height: 1.5;
+  margin: 15px 0;
+  font-size: 15px;
+}
+body {
+    background-image: url("{% static 'home/img/background.png' %}");
+}
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+.slide2{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-09_FriendshipSquare_ROW9564679720_1920x1080.jpg');
+  height: 63vh;
+
+  background-position: center;
+  background-size: cover;
+}
+
+
+h2{
+margin-top:0;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+.carousel-caption h2{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:140px;
+    color:green
+
+}
+.carousel-caption p{
+  font-size: 2em;
+}
+
+</style>
+</head>
+<body>
+
+{% block content %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>Contact</h1>
+
+    </div>
+  </div>
+  </div>
+</div>
+<br />
+<div class="container">
+<div class="row">
+            <!-- Map Column -->
+            <div class="col-md-8">
+                <!-- Embedded Google Map -->
+                <a href="http://binged.it/1qqNKtM">
+                <img width="90%" height="90%" src="{% static 'home/img/map.png' %}" >
+            </a>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-md-4">
+                <h2>Contact Details</h2>
+                <p>
+                    Xueyuan E St, Saihan Qu, Huhehaote Shi,A 312<br>Neimenggu Zizhiqu, China, 010070<br>
+                </p>
+                <p><i class="fa fa-phone"></i>
+                    <abbr title="Phone">P</abbr>: 15598033506</p>
+                <p><i class="fa fa-envelope-o"></i>
+                    <abbr title="Email">E</abbr>: <a>254515184@qq.com</a>
+                </p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                    <li>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/AVES-929990587109838/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/aves-esl-training-a13288122?trk=hp-identity-photo"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/113907252636829266395/posts"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                </ul>
+                <img width="90%" height="90%" src="{% static 'home/img/wechat.png' %}">
+            </div>
+        </div>
+</div>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+
+
+
+</body>
+</html>

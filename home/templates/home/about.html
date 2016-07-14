@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+{% load staticfiles %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>About</title>
+
+<!-- Use downloaded version of Bootstrap. You can style everything here to your liking. -->
+<!-- Download the Bootstrap source code here
+http://getbootstrap.com/getting-started/ -->
+
+
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+
+<link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+<link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+<link rel="stylesheet" href="{% static 'home/css/font-awesome.css' %}" type = "text/css"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{% static 'home/css/bootstrap-social.css' %}" type = "text/css"/>
+    <style type="text/css">
+
+        #aboutaves{
+            font-size: 20px;
+        }
+        #incol{
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        #profile{
+            padding-bottom: 0;
+
+            padding-right: 10px;
+        }
+        .col-md-4{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .caption p{
+            font-size: 17px;
+                text-align: left !important;
+
+        }
+        .caption h3, p{
+            margin-top: 10px !important;
+
+
+        }
+.btn {
+    border-radius: 4px !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+body {
+    background-image: url("{% static 'home/img/background.png' %}");
+}
+  .navbar-inverse .navbar-brand:hover,
+  .navbar-inverse .navbar-brand:focus {
+    color: #0085a1;
+  }
+
+.slide2{
+  background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-04_Wilhelmshohe_ROW9040324021_1920x1080.jpg');
+  height: 63vh;
+
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:100%;
+    margin-bottom:35px
+}
+@media (max-width: 991px) {
+          #aves, #profile{
+              width:0%;
+              height:0%;
+
+          }
+            #leftcol, #rightcol{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+    }
+@media (min-width: 991px) {
+          #longlogo, #smallprofile{
+              width:0%;
+              height:0%;
+
+          }
+        #leftcol{
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+        #rightcol{
+            padding-left: 10px;
+            padding-right: 0px;
+        }
+}
+
+</style>
+</head>
+<body>
+
+{% block content %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>About</h1>
+
+    </div>
+  </div>
+  </div>
+</div>
+<br />
+<div class="container">
+
+
+
+        <!-- Intro Content -->
+        <div class="row">
+            <img class="img-responsive" id="longlogo" width="100%" height="100%" src="{% static 'zinnia/img/longlogo.jpg' %}" alt="">
+            <div class="col-md-3" id = 'aboutimage'>
+                <img class="img-responsive" id="aves" width="100%" height="100%" src="{% static 'zinnia/img/aveslogo.png' %}" alt="">
+            </div>
+            <div class="col-md-9">
+                <h2>About AVES</h2>
+                <p id = 'aboutaves'>We know that it is extremely hard to learn a foreign language and get opportunities to study abroad, especially for Chinese Students. We have a strong team dedicated to help Chinese students master English and find the best ways to pursue their academic  goals.</p>
+                
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Team Members -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            <div class="col-md-8 text-center">
+
+                <div class="thumbnail">
+                    <div class="col-md-4 text-center" id="incol">
+                        <img class="img-responsive" id = 'smallprofile' src="{% static 'home/img/401005_10200812095812304_867743919_n.jpg' %}" alt="">
+                    <img class="img-responsive" id = 'profile' src="{% static 'home/img/Graduation Photo with open smile (2).jpg' %}" alt="">
+
+
+                    </div>
+
+                    <div class="caption">
+                        <h3>Christopher F. Darden<br>
+                            <small>ESL for Children</small>
+
+                        </h3>
+                        <p>Christopher F. Darden, Fayetteville State University, M.B.A. Master of Business Administration 2012-2014. Mr. Darden has been teaching English in China for 2 years and really enjoys seeing his students' English skills improve. Also, he teaches test taking skills for IELTS and TOEFL. Mr. Darden also has experience teaching Science and Math for High School students.</p>
+                        </div>
+                    <ul class="list-inline">
+                            <li><a  class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/christopher.f.darden"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a  class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/christopher-f-darden-a5366259"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a  class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/1/105777343546753978552/posts"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                        </div>
+
+                <div class="col-md-6 text-center" id = 'leftcol'>
+                <div class="thumbnail">
+                    <img class="img-responsive" src="{% static 'home/img/0514_1.jpg' %}" alt="">
+                    <div class="caption">
+                        <h3>John Zhang<br>
+                            <small>ESL for Children</small>
+                        </h3>
+                        <p>John Zhang, Inner Mongolia University, B.A. English, 1980-1984. Mr. Zhang is one of our most experienced team members with 15 years of teaching experience. He specializes in helping students with English listening and speaking skills.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center" id = 'rightcol'>
+                <div class="thumbnail">
+                    <img class="img-responsive" src="{% static 'home/img/0525_11.jpg' %}" alt="">
+                    <div class="caption">
+                        <h3>Elliot<br>
+                            <small>ESL for Children</small>
+                        </h3>
+                        <p>
+
+I have been teaching in China since early 2011.
+I firmly believe that there should be no learning without fun,
+and no fun without learning.  Active students are happy students,
+and so my classes are always full of activity. <a href="{% static 'home/img/0525_2.jpg' %}"><u>My certificate.</u></a>
+</p>
+
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="{% static 'home/img/0525_1 (1).jpg' %}" alt="">
+                    <div class="caption">
+                        <h3>Charles Qiu<br>
+                            <small>ESL for 9th Grade Students</small>
+                        </h3>
+                        <p>Charles Qiu, Beijing Foreign Studies University, B.A. English. Mr. Qiu has over 20 years of experience teaching ESL. He is dedicated to studying Senior High School Entrance Examination (known as Zhongkao) for years. Students always have a great time while preparing for the final in his class. Why? <a href="https://www.youtube.com/watch?v=p5RobDomh5U"><u>Just magic.</u></a></p>
+
+                    </div>
+                </div>
+
+                <div class="thumbnail">
+                    <img class="img-responsive" src="{% static 'home/img/0605_1.jpg' %}" alt="">
+                    <div class="caption">
+                        <h3>Mike<br>
+                            <small>ESL for Children</small>
+                        </h3>
+                        <p>I come from Los Angeles, California. I am a passionate English teacher with over 5 years of experience.  I try to maintain a cheerful environment and have a lot of fun in my class so that the students can learn to fully express themselves in English.</p>
+
+                    </div>
+                </div>
+                </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Our Customers -->
+
+        <!-- /.row -->
+
+        <hr>
+
+
+
+    </div>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+
+
+
+</body>
+</html>

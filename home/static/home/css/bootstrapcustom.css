@@ -1,0 +1,125 @@
+.navbar-custom {
+	background-color:#229922;
+    color:#ffffff;
+  	border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #33aa33;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#33aa33;
+}
+
+.navbar-custom {
+	background-color:#229922;
+    color:#ffffff;
+  	border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #33aa33;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#33aa33;
+}
+.navbar-customred {
+	background-color:#e74c3c;
+    color:#ffffff;
+  	border-radius:0;
+}
+
+.navbar-customred .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-customred .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-customred .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #c0392b;
+}
+.navbar-customred .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-customred .icon-bar {
+    background-color: #c0392b;
+}
+
+
+.navbar-customgreen {
+	background-color:#2ecc71;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-customgreen .navbar-nav > li > a {
+  	color:#fff;
+}
+.navbar-customgreen .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-customgreen .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #27ae60;
+}
+.navbar-customgreen .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-customgreen .icon-bar {
+  	background-color:#27ae60;
+}
+.carousel-header {
+
+    top: 0;
+    bottom: auto;
+    padding-top: 0px;
+    text-align: left;
+    left: 0%;
+    position: absolute;
+  right: 0%;
+  bottom: 0px;
+
+  z-index: 0;
+
+  padding-bottom: 0px;
+  color: blue;
+
+
+
+ }
+.carousel-header .btn {
+  text-shadow: none;
+  }
+  .carousel-header {
+    right: 0%;
+    left: 0%;
+  padding-bottom: 30px;}
