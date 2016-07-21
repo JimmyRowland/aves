@@ -24,17 +24,60 @@
 
 {% block sidebar %}
 
+<h3><a href="{% url 'home:about' %}">About Us</a></h3>
+<div class='widget-content'>
+
+<a href='https://plus.google.com/113907252636829266395'><img alt='My Photo' class='profile-img' height='80' src='https://collegexam.files.wordpress.com/2016/07/photo.png' width='80'/></a>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='https://plus.google.com/113907252636829266395' rel='author' style='background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);'>
+AVES ESL Training
+</a>
+<br/>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='https://plus.google.com/113907252636829266395'></div>
+</dt>
+<dd class='profile-textblock'>We know that it is extremely hard to learn a foreign language and get opportunities to study abroad, especially for Chinese Students. We have a strong team dedicated to help Chinese students master English and find the best ways to pursue their academic goals.</dd>
+</dl>
+
+    <share-button></share-button>
+    <script>var shareButton = new ShareButton();</script>
+    <br/><br/>
+<div class='footer-social-icons'>
+<h4 class='_14'>Follow us on</h4>
+<ul class='social-icons'>
+<li><a class='social-icon' href='https://www.facebook.com/AVES-929990587109838/'>
+<i class='fa fa-facebook'></i></a></li>
+<li><a class='social-icon' href='https://twitter.com/avescoop'>
+<i class='fa fa-twitter'></i></a></li>
+<li><a class='social-icon' href='https://avescoop.me/weblog/feeds/'>
+<i class='fa fa-rss'></i></a></li>
+<li><a class='social-icon' href='https://www.linkedin.com/profile/preview?locale=en_US'>
+<i class='fa fa-linkedin'></i></a></li>
+<li><a class='social-icon' href='https://plus.google.com/113907252636829266395/posts'>
+<i class='fa fa-google-plus'></i></a></li>
+</ul>
+</div></div>
+
+    <form class="form-inline" role="search" method="get" action="{% url 'zinnia:entry_search' %}">
+        <div class="form-group">
+        <input type="text" name="pattern" placeholder="{% trans "Search" %}" {% if pattern %}value="{{ pattern }}"{% endif %} />
+        </div>
+    </form>
+    <br>
+    <div class="sideLink">
+    <aside id="widget-authors" class="widget">
+      <h3>
+        <a href="{% url 'zinnia:author_list' %}">{% trans "Authors" %}</a>
+      </h3>
+      {% get_authors %}
+    </aside>
+
   <h3>
     <a href="{% url 'zinnia:category_list' %}">{% trans "Categories" %}</a>
   </h3>
   {% get_categories %}
 </aside>
-<aside id="widget-authors" class="widget">
-  <h3>
-    <a href="{% url 'zinnia:author_list' %}">{% trans "Authors" %}</a>
-  </h3>
-  {% get_authors %}
-</aside>
+
 
 <aside id="widget-tags" class="widget">
   <h3>
@@ -42,14 +85,18 @@
   </h3>
   {% get_tag_cloud %}
 </aside>
-<aside id="widget-recents" class="widget">
-  <h3>{% trans "Recent entries" %}</h3>
-  {% get_recent_entries %}
-</aside>
+    </div>
+
 <aside id="widget-comments" class="widget">
   <h3>{% trans "Recent comments" %}</h3>
   {% get_recent_comments %}
 </aside>
+
+<aside id="widget-recents" class="widget">
+  <h3>{% trans "Recent entries" %}</h3>
+  {% get_recent_entries %}
+</aside>
+
 
 
 <aside id="widget-populars" class="widget">

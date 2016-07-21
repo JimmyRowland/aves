@@ -21,15 +21,18 @@
         <a href="{{ author.get_absolute_url }}" class="fn url{% if not author.get_full_name %} nickname{% endif %}" rel="author"
            title="{% blocktrans %}Show all {{ author }}'s entries{% endblocktrans %}" itemprop="url">{{ author }}</a></span>{% if not forloop.last %}, {% endif %}
       {% endfor %}
-      {% trans "on" context "on date" %}
+      {% trans "," context "on date" %}
       {% else %}
       {% trans "Written on" %}
       {% endif %}
       {% endwith %}
       {% endblock entry-authors %}
-      {% block entry-published %}
-      <time class="published" datetime="{{ object.publication_date|date:"c" }}" itemprop="datePublished">{{ object.publication_date|date:"DATE_FORMAT" }}</time>
-      {% endblock entry-published %}
+      {% block entry-last-update %}
+
+          {% trans "last update on" %} <time class="updated" datetime="{{ object.last_update|date:"c" }}" itemprop="dateModified">{{ object.last_update|date:"DATE_FORMAT" }}</time>
+
+      {% endblock entry-last-update %}
+
       {% block entry-categories %}
       {% with categories=object.categories.all %}
       {% if categories|length %}
@@ -42,11 +45,7 @@
       {% endblock entry-categories %}
     </p>
     {% endblock entry-info %}
-    {% block entry-last-update %}
-    <p class="entry-last-update">
-      {% trans "Last update on" %} <time class="updated" datetime="{{ object.last_update|date:"c" }}" itemprop="dateModified">{{ object.last_update|date:"DATE_FORMAT" }}</time>.
-    </p>
-    {% endblock entry-last-update %}
+
     {% block entry-creation-date %}
     <meta itemprop="dateCreated" content="{{ object.creation_date|date:"c" }}" />
     {% endblock entry-creation-date %}
@@ -95,7 +94,7 @@
     {% block continue-reading %}
     {% if continue_reading and object_content.has_more %}
     <p class="continue-reading">
-      <a id='continue-reading' class='btn btn-primary' href="{{ object.get_absolute_url }}"
+      <a id='continue-reading' class='button' href="{{ object.get_absolute_url }}"
          title="{% blocktrans with object=object.title percent=object_content.remaining_percent|floatformat:0 %}{{ percent }}% of {{ object }} still remains to read.{% endblocktrans %}"
          rel="bookmark" itemprop="url">
         {% trans "Continue reading" %}
