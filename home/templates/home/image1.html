@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>AVES</title>
+    <link rel="shortcut icon" href="{% static "zinnia/img/aves.png" %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type = "text/css"/>
+    <link rel="stylesheet" href="{% static 'home/css/clean-blog.css' %}" type = "text/css"/>
+    <!--[if lte IE 8]><script src="{% static 'home/js/ie/html5shiv.js' %}"></script><![endif]-->
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="{% static 'home/css/ie9.css' %}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{% static 'home/css/ie8.css' %}" /><![endif]-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    body {
+        background-image: url("{% static 'home/img/background.png' %}");
+    }
+
+      .navbar-inverse .navbar-brand:hover,
+      .navbar-inverse .navbar-brand:focus {
+        color: #0085a1;
+      }
+    .slide1{
+      background-image: url('{% static 'home/img/photo.png' %}');
+      height: 100vh;
+
+      background-position: center;
+      background-size: cover;
+    }
+    .slide2{
+      background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/03/2016-03-30_WestBow_ROW12007933071_1920x1080.jpg');
+      height: 100vh;
+
+      background-position: center;
+      background-size: cover;
+    }
+    .slide3{
+      background-image: url('https://www.iorise.com/blog/wp-content/uploads/2016/04/2016-04-16_ShenandoahNP_ROW12113844963_1920x1080.jpg');
+      height: 100vh;
+
+      background-position: center;
+      background-size: cover;
+    }
+    .slide4{
+      background-image: url('{% static 'home/img/culture.png' %}');
+      height: 100vh;
+
+      background-position: center;
+      background-size: cover;
+    }
+    .carousel-header h4{
+    margin-top:0;
+    }
+    .carousel-caption h1{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style:italic;
+        font-size:40px;
+        line-height:100%;
+        margin-bottom:35px
+    }
+    .carousel-caption h2{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style:italic;
+        font-size:40px;
+        line-height:100%;
+        margin-bottom:140px;
+        color:green
+
+    }
+    .carousel-caption h3{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-style:italic;
+        font-size:40px;
+        line-height:100%;
+        margin-bottom:140px;
+        color:#fff;
+
+    }
+    .carousel-caption h4 {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    </style>
+</head>
+<body class="landing">
+<div id="page-wrapper">
+{% block navbar %}
+{% include "home/includes/cusnavbar.html" %}
+{% endblock %}
+<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>The future has landed</h2>
+							<p>And there are no hoverboards or flying cars.<br />
+							Just apps. Lots of mother flipping apps.</p>
+						</header>
+						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>Odio faucibus ipsum integer consequat</h2>
+										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+									augue varius tempus lobortis porttitor accumsan consequat
+									adipiscing lorem dolor.</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
+									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+									ipsum dolor nullam.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Interdum amet non magna accumsan</h2>
+							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Interdum felis blandit praesent sed augue</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide2"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h1>You Can Achieve Anything</h1>
+      <h4>We Will Help You Follow Your Dream</h4>
+      <p><a href="{% url 'home:contact' %}" class="btn btn-primary btn-sm">Learn More</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide1"></div>
+
+
+
+    <div class="carousel-caption">
+      <h3>We Care About Your Future</h3>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide3"></div>
+
+
+
+    <div class="carousel-caption">
+
+      <h3>
+          We Offer Different ESL Classes Just For You</h3>
+
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+<div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+
+  <div class="caropadding-top: 20px;usel-inner">
+
+    <div class="item active" >
+
+
+    <div class ="slide4"></div>
+
+
+
+    <div class="carousel-caption">
+      <h1>We Have Various Culture Exchange Programs For You To Choose</h1>
+        <h4>USA? Canada...?</h4>
+        <p><a href="{% url 'home:contact' %}" class="btn btn-primary btn-sm">Contact Us Now</a></p>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+{% block footer %}
+{% include "home/includes/footer.html" %}
+{% endblock %}
+</div>
+<script src="{% static 'home/js/jquery.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'home/js/clean-blog.min.js' %}"></script>
+
+
+
+
+</body>
+</html>
