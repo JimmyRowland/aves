@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,6 +23,10 @@ http://getbootstrap.com/getting-started/ -->
 #map{
     width:0%;
 }
+    .fwechat{
+        width:10%
+    }
+
 </style>
 </head>
 <body>
@@ -32,6 +37,14 @@ http://getbootstrap.com/getting-started/ -->
 				<p>
                     Xueyuan E St, Saihan Qu, Huhehaote Shi,A 312<br><a href="http://binged.it/1qqNKtM">Neimenggu Zizhiqu, China, 010070</a><br>
                 </p>
+                <p>It is {% now "jS F Y H:i:s" %}</p>
+                {% load getImgUrl%}
+
+                <img src="https://collegexam.files.wordpress.com/2016/07/{% now "s" %}.jpg" alt="1" class="fwechat">\
+				<img src="https://collegexam.files.wordpress.com/2016/07/{{ rand|add:"1234567890om"|make_list|random }}.jpg" alt="2" class="fwechat">
+				<img src="https://collegexam.files.wordpress.com/2016/07/{{ rand|add:"pqrstuvwxyzn"|make_list|random }}.jpg" alt="3" class="fwechat">
+				<img src="https://collegexam.files.wordpress.com/2016/07/{{ rand|add:"abcdefghijkl"|make_list|random }}.jpg" alt="4" class="fwechat">
+
 
 
 
